@@ -1,1 +1,4 @@
 # DB-Assignment
+Answer 1.  The "Product" and "Product_Category" entities have a relationship defined by the "category_id" column in the "Product" table. This "category_id" column is an integer and serves as a foreign key, referencing the "id" column in the "Product_Category" table. This indicates that each product is associated with one product category, while each product category can have multiple products associated with it. In other words, the relationship between "Product" and "Product_Category" is a one-to-many relationship, with "Product_Category" being the "one" side and "Product" being the "many" side.
+
+Answer 2. To ensure that each product in the "Product" table has a valid category assigned to it, you can implement a constraint in the database schema. Specifically, you can use a foreign key constraint on the "category_id" column in the "Product" table, referencing the "id" column in the "Product_Category" table.
